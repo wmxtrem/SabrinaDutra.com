@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sabrina Dutra | Nail Designer</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Fontes Profissionais: Montserrat e Playfair Display -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <!-- FontAwesome para Ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #FDFBF7;
+            color: #4A3B32;
+        }
+        .font-serif-custom {
+            font-family: 'Playfair Display', serif;
+        }
+        .bg-nude-light {
+            background-color: #F7F2EC;
+        }
+        .bg-nude-card {
+            background-color: #EFE6DC;
+        }
+        .text-primary-brown {
+            color: #4A3B32;
+        }
+        .text-accent-rose {
+            color: #C59B8B;
+        }
+        .border-nude {
+            border-color: #D5BCAC;
+        }
+        .btn-rose {
+            background-color: #C59B8B;
+            transition: all 0.3s ease;
+        }
+        .btn-rose:hover {
+            background-color: #B28777;
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px -5px rgba(197, 155, 139, 0.4);
+        }
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px -10px rgba(74, 59, 50, 0.12);
+        }
+    </style>
+</head>
+<body class="bg-[#FDFBF7] text-[#4A3B32] antialiased">
+
+    <!-- BOTÃO FLUTUANTE WHATSAPP -->
+    <a href="https://wa.me/5521973544427?text=Olá%20Sabrina,%20gostaria%20de%20agendar%20um%20horário!" target="_blank" class="fixed bottom-6 right-6 z-50 bg-green-600 hover:bg-green-500 text-white w-14 h-14 rounded-full flex items-center justify-center text-2xl shadow-2xl transition-all hover:scale-110 animate-bounce" title="Fale pelo WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- HEADER / NAVEGAÇÃO -->
+    <header class="fixed top-0 left-0 w-full z-40 bg-[#FDFBF7]/90 backdrop-blur-md border-b border-[#EFE6DC]">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#" class="flex flex-col">
+                <span class="font-serif-custom text-2xl font-bold tracking-wider text-[#4A3B32]">Sabrina Dutra</span>
+                <span class="text-[10px] tracking-[0.25em] text-[#C59B8B] uppercase font-semibold">Nail Designer</span>
+            </a>
+            
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-[#4A3B32]">
+                <a href="#inicio" class="hover:text-[#C59B8B] transition-colors">Início</a>
+                <a href="#sobre" class="hover:text-[#C59B8B] transition-colors">O Espaço</a>
+                <a href="#servicos" class="hover:text-[#C59B8B] transition-colors">Serviços & Preços</a>
+                <a href="#planos" class="hover:text-[#C59B8B] transition-colors">Planos Mensais</a>
+                <a href="#galeria" class="hover:text-[#C59B8B] transition-colors">Galeria</a>
+            </nav>
+
+            <a href="https://wa.me/5521973544427?text=Olá%20Sabrina,%20gostaria%20de%20agendar%20um%20horário!" target="_blank" class="btn-rose text-white font-semibold text-xs md:text-sm px-5 py-3 rounded-full shadow-md flex items-center gap-2">
+                <i class="fa-brands fa-whatsapp text-base"></i> Agende Aqui
+            </a>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="inicio" class="relative pt-32 pb-20 md:pt-44 md:pb-32 overflow-hidden bg-gradient-to-b from-[#F7F2EC] to-[#FDFBF7]">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12 items-center relative z-10">
+            <div class="space-y-6" data-aos="fade-right" data-aos-duration="1000">
+                <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#EFE6DC] text-[#C59B8B] text-xs font-bold tracking-widest uppercase border border-[#D5BCAC]/40">
+                    <i class="fa-solid fa-heart text-[10px]"></i> Unhas que realçam sua beleza e autoestima!
+                </div>
+                <h1 class="font-serif-custom text-4xl md:text-6xl font-bold tracking-tight leading-tight text-[#4A3B32]">
+                    Sua beleza, <br><span class="italic text-[#C59B8B]">meu propósito!</span> ♡
+                </h1>
+                <p class="text-[#6B5B52] text-base md:text-lg leading-relaxed font-normal">
+                    Atendimento exclusivo e especializado em um ambiente aconchegante para cuidar de cada detalhe das suas mãos e pés com todo o carinho e qualidade.
+                </p>
+                <div class="flex flex-wrap gap-4 pt-2">
+                    <a href="https://wa.me/5521973544427?text=Olá%20Sabrina,%20gostaria%20de%20agendar%20um%20horário!" target="_blank" class="btn-rose text-white font-semibold px-8 py-4 rounded-full shadow-lg flex items-center gap-3">
+                        <i class="fa-brands fa-whatsapp text-lg"></i> Agendar Meu Horário
+                    </a>
+                    <a href="#servicos" class="bg-white hover:bg-[#F7F2EC] border border-[#D5BCAC] text-[#4A3B32] font-semibold px-6 py-4 rounded-full transition-all flex items-center gap-2">
+                        Ver Catálogo de Valores
+                    </a>
+                </div>
+                
+                <div class="grid grid-cols-3 gap-6 pt-6 border-t border-[#EFE6DC]">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-[#EFE6DC] flex items-center justify-center text-[#C59B8B]">
+                            <i class="fa-solid fa-shield-heart"></i>
+                        </div>
+                        <div>
+                            <div class="font-bold text-sm text-[#4A3B32]">Dedicação</div>
+                            <div class="text-[11px] text-[#6B5B52]">Exclusiva</div>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-[#EFE6DC] flex items-center justify-center text-[#C59B8B]">
+                            <i class="fa-solid fa-gem"></i>
+                        </div>
+                        <div>
+                            <div class="font-bold text-sm text-[#4A3B32]">Cuidado</div>
+                            <div class="text-[11px] text-[#6B5B52]">Detalhado</div>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-[#EFE6DC] flex items-center justify-center text-[#C59B8B]">
+                            <i class="fa-solid fa-award"></i>
+                        </div>
+                        <div>
+                            <div class="font-bold text-sm text-[#4A3B32]">Qualidadde</div>
+                            <div class="text-[11px] text-[#6B5B52]">Garantida</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FOTO DA PROFISSIONAL -->
+            <div class="relative flex justify-center" data-aos="fade-left" data-aos-duration="1000">
+                <div class="relative w-full max-w-md rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-[#EFE6DC]">
+                    <!-- Usando a foto oficial da Sabrina enviada no primeiro catálogo -->
+                    <img src="image_64759a.jpg" alt="Sabrina Dutra Nail Designer" class="w-full h-auto object-cover hover:scale-105 transition-transform duration-500">
+                    <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent p-6 text-white text-center">
+                        <h3 class="font-serif-custom text-xl font-bold">Sabrina Dutra</h3>
+                        <p class="text-xs tracking-widest text-[#EFE6DC] uppercase">Nail Designer Profissional</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SOBRE O ESPAÇO -->
+    <section id="sobre" class="py-20 bg-[#F7F2EC] border-y border-[#EFE6DC]">
+        <div class="max-w-4xl mx-auto px-6 text-center space-y-6" data-aos="fade-up" data-aos-duration="800">
+            <span class="text-[#C59B8B] text-xs font-bold uppercase tracking-widest">AMBIENTE EXCLUSIVO</span>
+            <h2 class="font-serif-custom text-3xl md:text-4xl font-bold text-[#4A3B32]">Atendimento com Hora Marcada</h2>
+            <p class="text-[#6B5B52] leading-relaxed text-base md:text-lg">
+                Para garantir total conforto, foco e higiene impecável, todos os atendimentos são realizados exclusivamente no meu espaço preparado em minha casa, com horário marcado e materiais rigorosamente esterilizados.
+            </p>
+            <div class="inline-flex items-center gap-3 px-6 py-3 rounded-2xl bg-white border border-[#D5BCAC] text-[#4A3B32] font-medium text-sm shadow-sm">
+                <i class="fa-solid fa-house-chimney text-[#C59B8B] text-lg"></i>
+                Atendimento somente no meu espaço em minha casa ♡
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVIÇOS & VALORES -->
+    <section id="servicos" class="py-24 max-w-7xl mx-auto px-6">
+        <div class="text-center max-w-2xl mx-auto mb-16 space-y-4" data-aos="fade-up">
+            <span class="text-[#C59B8B] text-xs font-bold uppercase tracking-widest">CATÁLOGO DE VALORES</span>
+            <h2 class="font-serif-custom text-3xl md:text-4xl font-bold text-[#4A3B32]">Nossos Serviços</h2>
+            <p class="text-[#6B5B52] text-sm">Escolha o procedimento ideal para realçar suas unhas e agende diretamente pelo WhatsApp.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Card 1 -->
+            <div class="bg-white border border-[#EFE6DC] p-6 rounded-2xl card-hover shadow-sm flex flex-col justify-between" data-aos="fade-up" data-aos-delay="100">
+                <div>
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="w-12 h-12 rounded-xl bg-[#F7F2EC] text-[#C59B8B] flex items-center justify-center text-xl">
+                            <i class="fa-solid fa-hand-sparkles"></i>
+                        </div>
+                        <span class="font-serif-custom text-2xl font-bold text-[#4A3B32]">R$ 45,00</span>
+                    </div>
+                    <h3 class="font-serif-custom font-bold text-xl text-[#4A3B32] mb-1">Pé e Mão Simples</h3>
+                    <p class="text-xs text-[#6B5B52] mb-4">Cutilagem e esmaltação tradicional caprichada para pés e mãos.</p>
+                    <div class="bg-[#F7F2EC] p-3 rounded-xl mb-4 text-xs text-[#4A3B32] flex justify-between items-center">
+                        <span>Com decoração (unha filha única / adesivo):</span>
+                        <strong class="text-[#C59B8B]">R$ 50,00</strong>
+                    </div>
+                </div>
+                <a href="https://wa.me/5521973544427?text=Olá%20Sabrina,%20gostaria%20de%20agendar%20Pé%20e%20Mão!" target="_blank" class="w-full bg-[#EFE6DC] hover:bg-[#C59B8B] hover:text-white text-[#4A3B32] font-semibold py-3 rounded-xl transition-all text-center text-sm flex items-center justify-center gap-2">
+                    <i class="fa-brands fa-whatsapp"></i> Agendar Pé e Mão
+                </a>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="bg-white border border-[#EFE6DC] p-6 rounded-2xl card-hover shadow-sm flex flex-col justify-between" data-aos="fade-up" data-aos-delay="200">
+                <div>
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="w-12 h-12 rounded-xl bg-[#F7F2EC] text-[#C59B8B] flex items-center justify-center text-xl">
+                            <i class="fa-solid fa-spa"></i>
+                        </div>
+                        <span class="font-serif-custom text-2xl font-bold text-[#4A3B32]">R$ 30,00</span>
+                    </div>
+                    <h3 class="font-serif-custom font-bold text-xl text-[#4A3B32] mb-1">Só Pedicure Simples</h3>
+                    <p class="text-xs text-[#6B5B52] mb-4">Cuidado completo para os pés, com cutilagem e esmaltação impecável.</p>
+                </div>
+                <a href="https://wa.me/5521973544427?text=Olá%20Sabrina,%20gostaria%20de%20agendar%20Pedicure!" target="_blank" class="w-full bg-[#EFE6DC] hover:bg-[#C59B8B] hover:text-white text-[#4A3B32] font-semibold py-3 rounded-xl transition-all text-center text-sm flex items-center justify-center gap-2">
+                    <i class="fa-brands fa-whatsapp"></i> Agendar Pedicure
+                </a>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="bg-white border border-[#EFE6DC] p-6 rounded-2xl card-hover shadow-sm flex flex-col justify-between" data-aos="fade-up" data-aos-delay="300">
+                <div>
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="w-12 h-12 rounded-xl bg-[#F7F2EC] text-[#C59B8B] flex items-center justify-center text-xl">
+                            <i class="fa-solid fa-hand"></i>
+                        </div>
+                        <span class="font-serif-custom text-2xl font-bold text-[#4A3B32]">R$ 30,00</span>
+                    </div>
+                    <h3 class="font-serif-custom font-bold text-xl text-[#4A3B32] mb-1">Só Manicure (Mão)</h3>
+                    <p class="text-xs text-[#6B5B52] mb-4">Manicure completa das mãos com acabamento e brilho duradouro.</p>
+                </div>
+                <a href="https://wa.me/5521973544427?text=Olá%20Sabrina,%20gostaria%20de%20agendar%20somente%20Mão!" target="_blank" class="w-full bg-[#EFE6DC] hover:bg-[#C59B8B] hover:text-white text-[#4A3B32] font-semibold py-3 rounded-xl transition-all text-center text-sm flex items-center justify-center gap-2">
+                    <i class="fa-brands fa-whatsapp"></i> Agendar Mão
+                </a>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="bg-white border border-[#EFE6DC] p-6 rounded-2xl card-hover shadow-sm flex flex-col justify-between" data-aos="fade-up" data-aos-delay="400">
+                <div>
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="w-12 h-12 rounded-xl bg-[#F7F2EC] text-[#C59B8B] flex items-center justify-center text-xl">
+                            <i class="fa-solid fa-wand-magic-sparkles"></i>
+                        </div>
+                        <span class="font-serif-custom text-2xl font-bold text-[#4A3B32]">R$ 40,00</span>
+                    </div>
+                    <h3 class="font-serif-custom font-bold text-xl text-[#4A3B32] mb-1">Unhas Postiças</h3>
+                    <p class="text-xs text-[#6B5B52] mb-4">Aplicação de unhas postiças com acabamento natural, resistência e beleza.</p>
+                </div>
+                <a href="https://wa.me/5521973544427?text=Olá%20Sabrina,%20gostaria%20de%20agendar%20Unhas%20Postiças!" target="_blank" class="w-full bg-[#EFE6DC] hover:bg-[#C59B8B] hover:text-white text-[#4A3B32] font-semibold py-3 rounded-xl transition-all text-center text-sm flex items-center justify-center gap-2">
+                    <i class="fa-brands fa-whatsapp"></i> Agendar Postiças
+                </a>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="bg-white border border-[#EFE6DC] p-6 rounded-2xl card-hover shadow-sm flex flex-col justify-between md:col-span-2 lg:col-span-2" data-aos="fade-up" data-aos-delay="500">
+                <div>
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="w-12 h-12 rounded-xl bg-[#F7F2EC] text-[#C59B8B] flex items-center justify-center text-xl">
+                            <i class="fa-solid fa-mug-hot"></i>
+                        </div>
+                        <span class="font-serif-custom text-2xl font-bold text-[#4A3B32]">R$ 100,00</span>
+                    </div>
+                    <h3 class="font-serif-custom font-bold text-xl text-[#4A3B32] mb-1">Spa dos Pés</h3>
+                    <p class="text-xs text-[#6B5B52] mb-4">Tratamento relaxante profundo para renovação, hidratação intensa, esfoliação e cuidado especial com os pés.</p>
+                </div>
+                <a href="https://wa.me/5521973544427?text=Olá%20Sabrina,%20gostaria%20de%20agendar%20Spa%20dos%20Pés!" target="_blank" class="w-full bg-[#EFE6DC] hover:bg-[#C59B8B] hover:text-white text-[#4A3B32] font-semibold py-3 rounded-xl transition-all text-center text-sm flex items-center justify-center gap-2">
+                    <i class="fa-brands fa-whatsapp"></i> Agendar Spa dos Pés
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- PLANOS MENSAIS -->
+    <section id="planos" class="py-24 bg-[#F7F2EC] border-y border-[#EFE6DC]">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16 space-y-4" data-aos="fade-up">
+                <span class="text-[#C59B8B] text-xs font-bold uppercase tracking-widest">ECONOMIA E PRATICIDADE</span>
+                <h2 class="font-serif-custom text-3xl md:text-4xl font-bold text-[#4A3B32]">Planos Mensais</h2>
+                <p class="text-[#6B5B52] text-sm">Garanta unhas impecáveis o mês todo com pacotes especiais e descontos imperdíveis.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Plano 1 -->
+                <div class="bg-white border border-[#D5BCAC]/50 p-8 rounded-3xl card-hover shadow-sm flex flex-col justify-between" data-aos="fade-up" data-aos-delay="100">
+                    <div>
+                        <div class="text-xs font-bold text-[#C59B8B] uppercase tracking-wider mb-2">Plano Essencial</div>
+                        <div class="font-serif-custom text-3xl font-bold text-[#4A3B32] mb-4">R$ 120,00 <span class="text-xs text-[#6B5B52] font-normal">/ mês</span></div>
+                        <ul class="space-y-3 text-sm text-[#6B5B52] mb-8">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-[#C59B8B]"></i> 4 Manicures completas</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-[#C59B8B]"></i> 1 atendimento por semana</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-[#C59B8B]"></i> Horário fixo garantido</li>
+                        </ul>
+                    </div>
+                    <a href="https://wa.me/5521973544427?text=Olá%20Sabrina,%20gostaria%20de%20assinar%20o%20Plano%20Mensal%20de%20R$%20120,00!" target="_blank" class="w-full bg-[#EFE6DC] hover:bg-[#C59B8B] hover:text-white text-[#4A3B32] font-semibold py-3.5 rounded-xl transition-all text-center block">
+                        Assinar Plano
+                    </a>
+                </div>
+
+                <!-- Plano 2 (Destaque) -->
+                <div class="bg-white border-2 border-[#C59B8B] p-8 rounded-3xl card-hover shadow-xl relative flex flex-col justify-between scale-105" data-aos="fade-up" data-aos-delay="200">
+                    <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-[#C59B8B] text-white text-[10px] font-bold px-4 py-1.5 rounded-full uppercase tracking-wider shadow-md">
+                        Mais Popular
+                    </div>
+                    <div>
+                        <div class="text-xs font-bold text-[#C59B8B] uppercase tracking-wider mb-2">Plano Completo</div>
+                        <div class="font-serif-custom text-3xl font-bold text-[#4A3B32] mb-4">R$ 150,00 <span class="text-xs text-[#6B5B52] font-normal">/ mês</span></div>
+                        <ul class="space-y-3 text-sm text-[#6B5B52] mb-8">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-[#C59B8B]"></i> 4 Manicures semanais</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-[#C59B8B]"></i> 1 Pedicure inclusa no mês</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-[#C59B8B]"></i> Prioridade na agenda</li>
+                        </ul>
+                    </div>
+                    <a href="https://wa.me/5521973544427?text=Olá%20Sabrina,%20gostaria%20de%20assinar%20o%20Plano%20Completo%20de%20R$%20150,00!" target="_blank" class="w-full btn-rose text-white font-semibold py-4 rounded-xl transition-all shadow-md text-center block">
+                        Assinar Plano Completo
+                    </a>
+                </div>
+
+                <!-- Plano 3 -->
+                <div class="bg-white border border-[#D5BCAC]/50 p-8 rounded-3xl card-hover shadow-sm flex flex-col justify-between" data-aos="fade-up" data-aos-delay="300">
+                    <div>
+                        <div class="text-xs font-bold text-[#C59B8B] uppercase tracking-wider mb-2">Plano Premium</div>
+                        <div class="font-serif-custom text-3xl font-bold text-[#4A3B32] mb-4">R$ 170,00 <span class="text-xs text-[#6B5B52] font-normal">/ mês</span></div>
+                        <ul class="space-y-3 text-sm text-[#6B5B52] mb-8">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-[#C59B8B]"></i> 4 Manicures semanais</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-[#C59B8B]"></i> 2 Pedicures inclusas no mês</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-[#C59B8B]"></i> Cuidado VIP completo</li>
+                        </ul>
+                    </div>
+                    <a href="https://wa.me/5521973544427?text=Olá%20Sabrina,%20gostaria%20de%20assinar%20o%20Plano%20Premium%20de%20R$%20170,00!" target="_blank" class="w-full bg-[#EFE6DC] hover:bg-[#C59B8B] hover:text-white text-[#4A3B32] font-semibold py-3.5 rounded-xl transition-all text-center block">
+                        Assinar Plano
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GALERIA DE TRABALHOS (NOVAS FOTOS ADICIONADAS) -->
+    <section id="galeria" class="py-24 max-w-7xl mx-auto px-6">
+        <div class="text-center max-w-2xl mx-auto mb-16 space-y-4" data-aos="fade-up">
+            <span class="text-[#C59B8B] text-xs font-bold uppercase tracking-widest">PORTFÓLIO</span>
+            <h2 class="font-serif-custom text-3xl md:text-4xl font-bold text-[#4A3B32]">Nossos Trabalhos em Destaque</h2>
+            <p class="text-[#6B5B52] text-sm">Confira alguns dos resultados recentes feitos com muito carinho e precisão.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Foto 1 -->
+            <div class="group relative rounded-2xl overflow-hidden shadow-lg border border-[#EFE6DC] bg-[#EFE6DC] aspect-[3/4]" data-aos="fade-up" data-aos-delay="100">
+                <img src="WhatsApp Image 2026-10-02 at 13.33.42.jpeg" alt="Trabalho de Manicure Sabrina Dutra" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
+                    <span class="text-white text-sm font-semibold font-serif-custom">Acabamento Perfeito & Brilho Intenso</span>
+                </div>
+            </div>
+
+            <!-- Foto 2 -->
+            <div class="group relative rounded-2xl overflow-hidden shadow-lg border border-[#EFE6DC] bg-[#EFE6DC] aspect-[3/4]" data-aos="fade-up" data-aos-delay="200">
+                <img src="WhatsApp Image 2026-10-02 at 13.33.43 (1).jpeg" alt="Trabalho de Esmaltação Sabrina Dutra" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
+                    <span class="text-white text-sm font-semibold font-serif-custom">Cutilagem Fina e Alinhada</span>
+                </div>
+            </div>
+
+            <!-- Foto 3 -->
+            <div class="group relative rounded-2xl overflow-hidden shadow-lg border border-[#EFE6DC] bg-[#EFE6DC] aspect-[3/4]" data-aos="fade-up" data-aos-delay="300">
+                <img src="WhatsApp Image 2026-10-02 at 13.33.43.jpeg" alt="Esmaltação com Detalhes Sabrina Dutra" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
+                    <span class="text-white text-sm font-semibold font-serif-custom">Detalhes Exclusivos & Elegância</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO DE CONTATO / CTA FINAL -->
+    <section class="py-20 bg-[#4A3B32] text-white">
+        <div class="max-w-4xl mx-auto px-6 text-center space-y-6" data-aos="zoom-in">
+            <span class="text-[#C59B8B] text-xs font-bold uppercase tracking-widest">AGENDE SEU HORÁRIO</span>
+            <h2 class="font-serif-custom text-3xl md:text-5xl font-bold">Pronta para transformar suas unhas?</h2>
+            <p class="text-[#EFE6DC]/80 max-w-xl mx-auto text-sm md:text-base">
+                Entre em contato agora mesmo pelo WhatsApp, tire suas dúvidas e garanta seu horário na agenda da semana!
+            </p>
+            <div class="pt-4">
+                <a href="https://wa.me/5521973544427?text=Olá%20Sabrina,%20gostaria%20de%20agendar%20um%20horário!" target="_blank" class="bg-[#C59B8B] hover:bg-[#B28777] text-white font-bold px-10 py-4 rounded-full shadow-2xl transition-all inline-flex items-center gap-3 text-lg hover:scale-105">
+                    <i class="fa-brands fa-whatsapp text-2xl"></i> Chamar no WhatsApp (21 97354-4427)
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-[#3A2E28] text-[#EFE6DC] py-12 border-t border-[#4A3B32]">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
+            <div>
+                <span class="font-serif-custom text-xl font-bold tracking-wider text-white">Sabrina Dutra</span>
+                <p class="text-xs text-[#C59B8B] uppercase tracking-widest mt-1">Nail Designer • Atendimento com Hora Marcada</p>
+            </div>
+            <p class="text-xs text-[#D5BCAC]/70">
+                © 2026 Sabrina Dutra. Todos os direitos reservados.
+            </p>
+            <div class="flex items-center gap-4 text-white text-lg">
+                <a href="https://wa.me/5521973544427" target="_blank" class="w-10 h-10 rounded-full bg-[#4A3B32] flex items-center justify-center hover:bg-[#C59B8B] transition-colors"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="#" class="w-10 h-10 rounded-full bg-[#4A3B32] flex items-center justify-center hover:bg-[#C59B8B] transition-colors"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts AOS Animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 100
+        });
+    </script>
+</body>
+</html>
